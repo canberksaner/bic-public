@@ -1,0 +1,9 @@
+import BicLean.Prefix
+import BicLean.Everett
+import BicLean.KeyFamily
+import BicLean.ClosedForm
+import BicLean.Duality
+import BicLean.Diminishing
+import BicLean.Choose
+import BicLean.Correctness
+import BicLean.TableI
