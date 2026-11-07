@@ -1,0 +1,4 @@
+__pycache__/
+data/sessions_utrecht_filtered.csv
+firmware/build/
+firmware/wifi_credentials.h
