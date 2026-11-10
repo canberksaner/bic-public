@@ -1,12 +1,14 @@
 # Bisect-Index-Choose (BIC)
 
+[![arXiv](https://img.shields.io/badge/arXiv-2611.10902-b31b1b.svg)](https://arxiv.org/abs/2611.10902)
+
 Code and data for the paper
 
-> C. B. Saner, "Bisect-Index-Choose: A Fast and Exact Algorithm for EV Charging under Minimum Charging Rates."
+> C. B. Saner, "Bisect-Index-Choose: A Fast and Exact Algorithm for EV Charging under Minimum Charging Rates," arXiv:2611.10902, 2026. [arxiv.org/abs/2611.10902](https://arxiv.org/abs/2611.10902)
 
 BIC allocates a power budget among the EVs connected to a charging station. Each EV charges either at zero or at a rate between a common minimum and its own maximum. BIC finds the allocation that maximizes a sum of concave utilities without a solver. The Python implementation is in `bic/bic.py`, and a C implementation for microcontrollers is in `firmware/bic_core.c`.
 
-**Contents:** [Setup](#setup) · [Reproducing the figures](#reproducing-the-figures) · [Using BIC](#using-bic) · [Proofs in Lean](#proofs-in-lean) · [Files](#files) · [Data](#data)
+**Contents:** [Setup](#setup) · [Reproducing the figures](#reproducing-the-figures) · [Using BIC](#using-bic) · [Proofs in Lean](#proofs-in-lean) · [Files](#files) · [Data](#data) · [Citation](#citation)
 
 ## Setup
 
@@ -163,3 +165,18 @@ lean/CheckAxioms.lean     lists the axioms behind each result
 - `data/open-ev-data-v1.24.0.json`: [OpenEV Data](https://github.com/open-ev-data/open-ev-data-dataset/releases/tag/v1.24.0), release v1.24.0, licensed under CDLA-Permissive-2.0 (`data/LICENSE-OpenEV.md`).
 
 Licence: MIT.
+
+## Citation
+
+```bibtex
+@misc{saner2026bic,
+  title         = {Bisect-Index-Choose: A Fast and Exact Algorithm for {EV} Charging under Minimum Charging Rates},
+  author        = {Saner, Can Berk},
+  year          = {2026},
+  eprint        = {2611.10902},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.SY},
+  doi           = {10.48550/arXiv.2611.10902},
+  url           = {https://arxiv.org/abs/2611.10902}
+}
+```
